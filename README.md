@@ -13,14 +13,14 @@ The whole thing is handled in multi-thread, so several clients are handled simul
 
 ## How to run
 ### Without Docker Compose (client Swift)
-- Change your IP address [**here**](./BitBooks/clientSwift/Lso_Client/Lso_Client/ModelView/NetworkManager.swift);
+- Change your IP address [**here**](./clientSwift/Lso_Client/Lso_Client/ModelView/NetworkManager.swift);
 - Open a terminal window and navigate to the project folder;
 - Run ‘gcc -o server server.c Controller/cJSON.c’ (to compile the server);
 - Execute ‘./server’ (to run the server);
 - Open the .xcodeproj file in the clientSwift folder with Xcode, select the simulator or device on which to run the app and build the app;
 
 ### With Docker Compose (client C)
-- Change your IP address [**here**](./BitBooks/client/client.c);
+- Change your IP address [**here**](./client/client.c);
 - Open Docker Desktop, open a terminal window and navigate to the project folder;
 - Execute ‘docker compose up --build -d’;
 - Execute ‘docker compose exec client ./client’;
