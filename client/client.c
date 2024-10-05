@@ -6,7 +6,7 @@
 #include <unistd.h>
 #define PORT 8080
 #define SIZE_BUF 2046
-#define IP_ADDR "192.168.1.116"
+#define IP_ADDR "YOUR_IP"
 
 int login(int client_fd, char *logged_in_user) {
     char username[SIZE_BUF], password[SIZE_BUF], buffer[SIZE_BUF] = {0};
