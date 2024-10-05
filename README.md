@@ -107,3 +107,6 @@ It is richly documented and no API key is required to search for metadata.
 - Open Docker Desktop, open a terminal window and navigate to the project folder;
 - Execute ‘docker compose up --build -d’;
 - Execute ‘docker compose exec client ./client’;
+
+## Demo
+https://github.com/user-attachments/assets/af2d0d0b-0941-4c0a-b6cc-a83fd395c180
