@@ -13,8 +13,7 @@ class NetworkManager: ObservableObject {
     @Published var bookCatalog: [Book] = []
     @Published var notifications: [Notification] = []
     var bookParsed = Book(title: "", ISBN: "", author: "", genre: "", copies: 0, given_copies: 0, cover: "")
-   // private let host = NWEndpoint.Host("192.168.1.116")
-    private let host = NWEndpoint.Host("172.20.10.4")
+    private let host = NWEndpoint.Host("YOUR_IP")
     private let port = NWEndpoint.Port(rawValue: 8080)!
     private var connection: NWConnection?
 
