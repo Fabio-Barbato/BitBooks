@@ -98,15 +98,15 @@ It is richly documented and no API key is required to search for metadata.
 ### Without Docker Compose (client Swift)
 - Change your IP address [**here**](./clientSwift/Lso_Client/Lso_Client/ModelView/NetworkManager.swift);
 - Open a terminal window and navigate to the project folder;
-- Run ‘gcc -o server server.c Controller/cJSON.c’ (to compile the server);
-- Execute ‘./server’ (to run the server);
+- Run ```gcc -o server server.c Controller/cJSON.c``` (to compile the server);
+- Execute ```./server``` (to run the server);
 - Open the .xcodeproj file in the clientSwift folder with Xcode, select the simulator or device on which to run the app and build the app;
 
 ### With Docker Compose (client C)
 - Change your IP address [**here**](./client/client.c);
 - Open Docker Desktop, open a terminal window and navigate to the project folder;
-- Execute ‘docker compose up --build -d’;
-- Execute ‘docker compose exec client ./client’;
+- Execute ```docker compose up --build -d```;
+- Execute ```docker compose exec client ./client```;
 
 ## Demo
 https://github.com/user-attachments/assets/af2d0d0b-0941-4c0a-b6cc-a83fd395c180
