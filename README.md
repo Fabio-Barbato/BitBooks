@@ -39,10 +39,10 @@ Requests the server to add a user with these parameters. If the addition was pos
 Requests the server to log in to the platform with the user data entered. If the user with these parameters exists, the user logs in;
 - **LOAN** *username* *isbn1* *isbn2* *isbn3*...
 Asks the server whether the user with the username can borrow a list of books. If lending is not possible, the user will receive an error message. Cases in which the user cannot make a loan are as follows:
- - There are no more copies available of a book on the list;
- - The user has already made five loans;
- - The number of books the user requests, added to the loans already made, is more than five;
- - The user requests a loan of more than five books;
+   - There are no more copies available of a book on the list;
+   - The user has already made five loans;
+   - The number of books the user requests, added to the loans already made, is more than five;
+   - The user requests a loan of more than five books;
 - **GET_BOOKS**
 Requests the entire catalogue of books from the server. The server converts the book json file into a string, so that it can be sent via socket. The client, once it receives the string, converts it back into json and then displays it on the screen to the user;
 - **GET_BOOK** *isbn*
